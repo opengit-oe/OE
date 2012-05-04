@@ -1,0 +1,15 @@
+recipes/aio-grab/aio-grab.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/aio-grab;protocol=git"
+recipes/ambx/python-pyambx.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/plugin-ambx;protocol=git"
+recipes/ambx/ambx.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/plugin-ambx;protocol=git"
+recipes/ambx/enigma2-plugin-extensions-ambx.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/plugin-ambx;protocol=git"
+recipes/tuxbox/libtuxtxt.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/tuxtxt;protocol=git"
+recipes/tuxbox/tuxtxt-enigma2.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/tuxtxt;protocol=git"
+recipes/openpli/gst-plugin-subsink.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/gstsubsink;protocol=git"
+recipes/openpli/enigma2-plugin-skins-magic.bb:OPENPLI_GIT ?= "git://openpli.git.sourceforge.net/gitroot/openpli"
+recipes/openpli/usbtunerhelper.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/vtuner;protocol=git \
+recipes/openpli/enigma2-plugin-extensions-xmltvimport.bb:OPENPLI_GIT ?= "git://openpli.git.sourceforge.net/gitroot/openpli"
+recipes/openpli/hotplug-e2-helper.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/${PN};protocol=git"
+recipes/openpli/enigma2-pliplugins.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/enigma2-plugins;protocol=git \
+recipes/etxx00/gst-plugin-dvbmediasink.bb:SRC_URI = "git://openpli.git.sourceforge.net/gitroot/openpli/gst-plugin-dvbmediasink;protocol=git"
+recipes/enigma2/enigma2-plugins.bb:SRC_URI="git://openpli.git.sourceforge.net/gitroot/openpli/plugins-enigma2;protocol=git"
+recipes/enigma2/enigma2-plugin-extensions-webinterface-old.bb:SRC_URI="git://openpli.git.sourceforge.net/gitroot/openpli/plugins-enigma2;protocol=git;branch=old \

@@ -1,0 +1,25 @@
+Index: mozilla-central/js/src/Makefile.in
+===================================================================
+--- mozilla-central.orig/js/src/Makefile.in
++++ mozilla-central/js/src/Makefile.in
+@@ -739,20 +739,8 @@ endif
+ 
+ export:: jsautocfg.h
+ 
+-ifeq (,$(CROSS_COMPILE)$(GNU_CC)$(filter-out WINNT,$(OS_ARCH)))
+ jsautocfg.h:
+ 	touch $@
+-else
+-ifeq ($(OS_ARCH),WINCE)
+-jsautocfg.h:
+-	touch $@
+-else
+-jsautocfg.h: jscpucfg$(HOST_BIN_SUFFIX)
+-	@rm -f $@ jsautocfg.tmp
+-	./jscpucfg > jsautocfg.tmp
+-	mv jsautocfg.tmp $@
+-endif
+-endif
+ 
+ # jscpucfg is a strange target
+ # Needs to be built with the host compiler but needs to include
